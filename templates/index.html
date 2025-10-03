@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1 style="background-color: black; color: azure;">The First Deployed App</h1>
+        <div><input type="text" id="msg"></div>
+        <h2 id="op" style="background-color: darkorchid; color: azure; word-wrap: break-word; width: 800px;"></h2>
+
+        <script>
+            msg_ele = document.getElementById('msg')
+            msg_ele.addEventListener("input", function(){
+                let inp_val = msg_ele.value
+                if (inp_val.trim().toLowerCase() == 'aditi'){
+                    inp_val = 'HALLUUUUU'
+                }
+                document.getElementById('op').innerHTML = inp_val
+
+
+            })
+        </script>
+</body>
+
+</html>
